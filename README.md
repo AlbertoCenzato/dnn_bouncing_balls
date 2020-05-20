@@ -5,7 +5,8 @@ PyTorch is required, install it from their [website](https://pytorch.org/get-sta
 
 Other required Python 3 packages are listed in requirements.txt file.
 
-NOTE: if you want the tests to produce .mp4 videos of the model's predictions you have to install ffmpeg and ensure it is in PATH.
+NOTE 1: code tested in a conda virtual environment on a windows 10 machine.
+NOTE 2: if you want the tests to produce .mp4 videos of the model's predictions you have to install ffmpeg and ensure it is in PATH.
 
 ### Dataset
 To generate the dataset execute the following command on your terminal:
@@ -26,5 +27,7 @@ and test the trained models:
 ```
 python train_and_test.py --test
 ```
+
+--test switch tests all the models listed in settings.py and produces a "test_results" directory wich contains predictions, error metrics and plots
 
 You can also use both ```--train``` and ```--test``` switches together.
